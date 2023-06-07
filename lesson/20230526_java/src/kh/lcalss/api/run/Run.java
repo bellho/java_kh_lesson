@@ -1,0 +1,10 @@
+package kh.lcalss.api.run;
+
+
+import kh.lcalss.api.TestApi;
+
+public class Run {
+	public static void main(String[] args) {
+		new TestApi().testDate();
+	}
+}
