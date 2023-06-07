@@ -6,7 +6,7 @@ public class TestVo {
 	private String boardTitle;
 	private String boardContent;
 	private String boardDate;
-	//쌩성자
+	//생성자
 	public TestVo() {}
 	//all arguments
 	public TestVo(int voardNum, String boardWriter, String boardTitle, String boardContent, String boardDate) {}
