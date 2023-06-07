@@ -9,7 +9,13 @@ public class TestVo {
 	//생성자
 	public TestVo() {}
 	//all arguments
-	public TestVo(int voardNum, String boardWriter, String boardTitle, String boardContent, String boardDate) {}
+	public TestVo(int voardNum, String boardWriter, String boardTitle, String boardContent, String boardDate) {
+		this.voardNum = voardNum;
+		this.boardTitle = boardWriter;
+		this.boardTitle = boardTitle;
+		this.boardContent = boardContent;
+		this.boardDate = boardDate;
+	}
 	//getter, setter
 	public int voardNumGetter() {
 		return this.voardNum;
