@@ -21,10 +21,8 @@ public class TcpClient {
 		OutputStream out = null;
 		BufferedReader br = null;
 		PrintWriter pw = null;
-		
 		//Scanner와 유사한 기능
 		BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in)); // console에 입력한 문자 읽어들이기 위한 객체
-		
 		try {
 			socket = new Socket(ip, port);
 			System.out.println("접속성공");
@@ -43,9 +41,6 @@ public class TcpClient {
 			
 			String receivedMsg = br.readLine();
 			System.out.println("서버로 부터온 메시지 : " + receivedMsg);
-			
-			
-			
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
