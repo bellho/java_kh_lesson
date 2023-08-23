@@ -21,6 +21,7 @@ public class Client {
 		BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in)); // console에 입력한 문자 읽어들이기 위한 객체
 		try {
 			sc = new Socket(ip, port);
+			System.out.println(sc.getLocalPort());
 			System.out.println("접속성공");
 			is = sc.getInputStream();
 			os = sc.getOutputStream();
