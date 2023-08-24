@@ -2,6 +2,10 @@ package kh.lclass.db1.member.model.vo;
 
 import org.springframework.stereotype.Component;
 
+import lombok.Getter;
+import lombok.Setter;
+
+
 @Component
 public class MemberVo {
 //	MEMBER------ -------- ------------- 
@@ -10,7 +14,7 @@ public class MemberVo {
 //	MNAME  NOT NULL VARCHAR2(50)  
 //	MEMAIL NOT NULL VARCHAR2(150)
 	
-	private String mid;
+	@Getter @Setter private String mid;
 	private String mpwd;
 	private String mname;
 	private String memail;
